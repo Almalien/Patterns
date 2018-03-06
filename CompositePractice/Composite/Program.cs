@@ -23,6 +23,15 @@ namespace Composite
             comp.Add(new PrimitiveElement("White Circle"));
             root.Add(comp);
 
+            // Segunda rama
+
+            CompositeElement comp2 =
+              new CompositeElement("Three triangles");
+            comp2.Add(new PrimitiveElement("Red Triangle"));
+            comp2.Add(new PrimitiveElement("Pink Triangle"));
+            comp2.Add(new PrimitiveElement("Yellow Triangle"));
+            comp.Add(comp2);
+
             // Add and remove a PrimitiveElement
 
             PrimitiveElement pe =
